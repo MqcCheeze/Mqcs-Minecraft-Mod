@@ -3,23 +3,26 @@
 	"id": "mqcs-minecraft-mod",
 	"version": "${version}",
 	"name": "Mqc's Minecraft Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod to learn Java",
 	"authors": [
-		"Me!"
+		"MqcCheeze"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/mqcs-minecraft-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.mqc.minecraftmod.ExampleMod"
+          "net.mqc.minecraftmod.CustomBlocks"
+		],
+		"client": [
+			"net.mqc.minecraftmod.CustomBlocksClient"
 		],
 		"fabric-datagen": [
-			"net.mqc.minecraftmod.ExampleModDataGenerator"
+          "net.mqc.minecraftmod.CustomBlocksDataGenerator"
 		]
 	},
 	"mixins": [
